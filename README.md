@@ -202,41 +202,6 @@ curl -X GET http://localhost:3000/urls \
   -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
 ```
 
-## Melhorias Potenciais para Escalabilidade Horizontal
-
-1. **Escalabilidade do Banco de Dados**:
-
-   - Implementar sharding para armazenamento de URLs
-   - Usar réplicas de leitura para cenários de alto tráfego
-   - Considerar soluções NoSQL para certos tipos de dados
-
-2. **Camada de Cache**:
-
-   - Implementar Redis para cache de URLs frequentemente acessadas
-   - Usar cache distribuído para múltiplas instâncias
-
-3. **Balanceamento de Carga**:
-
-   - Implantar atrás de um balanceador de carga para distribuir tráfego
-   - Implementar sessões persistentes se necessário
-
-4. **Statelessness**:
-
-   - Garantir que a aplicação permaneça stateless para fácil escalabilidade
-   - Armazenar dados de sessão no Redis ou armazenamento externo similar
-
-5. **Monitoramento e Observabilidade**:
-
-   - Implementar logging abrangente
-   - Configurar coleta de métricas com Prometheus
-   - Usar rastreamento distribuído com Jaeger ou ferramentas similares
-
-6. **Desafios**:
-   - Manter consistência de dados entre instâncias
-   - Gerenciar pools de conexão de banco de dados eficientemente
-   - Gerenciar invalidação de cache
-   - Garantir códigos curtos únicos em sistemas distribuídos
-
 ## Testes
 
 ```bash
