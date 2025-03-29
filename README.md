@@ -215,20 +215,6 @@ npm run test:e2e
 npm run test:cov
 ```
 
-## Contribuição
-
-Contribuições são bem-vindas! Para contribuir:
-
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/nova-funcionalidade`)
-3. Faça commit das suas alterações (`git commit -m 'Adiciona nova funcionalidade'`)
-4. Faça push para a branch (`git push origin feature/nova-funcionalidade`)
-5. Abra um Pull Request
-
-## Licença
-
-[MIT](LICENSE)
-
 ---
 
 Desenvolvido com ❤️ usando NestJS.
